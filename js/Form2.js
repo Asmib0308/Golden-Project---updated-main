@@ -99,6 +99,11 @@ hide(){
       this.hintFlag2 = false;
       this.hint4.show()
       this.clickFlag +=1
+      if(qid === 5){
+        gameState = 2
+        //form2.hide()
+        //form.reappear()
+      }  
      // answer.getAnswers()
     })
      
@@ -112,12 +117,7 @@ hide(){
     }
     this.saveGame.position(windowWidth/2 + 370, windowHeight/2 + 60)
     this.saveGame.mousePressed(async()=>{   
-      form.update(userId)
-      if(qid === 5){
-        gameState = 2
-        //form2.hide()
-        //form.reappear()
-      }
+      form.update(userId)      
      })
   }
   
